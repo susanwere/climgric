@@ -7,7 +7,7 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  box-shadow:inset 0 0 0 2000px rgba(0,0,0,0.5);
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -15,8 +15,80 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: Lato-Light;
 }
 
 .App-link {
   color: #09d3ac;
+}
+
+.counter{
+  flex-wrap: wrap;
+  display: flex;
+  padding-bottom: 33px;
+  box-sizing: border-box;
+}
+
+.counter-ring{
+  border: 1px solid #09d3ac;
+  border-radius: 50%;
+  width: 155px;
+  height: 155px;
+  align-items: center;
+  justify-content: center;
+  margin-right: 30px;
+  padding: 40px;
+}
+
+.counter-no{
+  font-family: Lato-Bold;
+  font-size: 40px;
+  line-height: 1;
+  color: #fff;
+  padding-bottom: 9px;
+  box-sizing: border-box;
+  display:inline-block;
+}
+
+.counter-text{
+  font-family: Lato-Regular;
+  font-size: 12px;
+  line-height: 1;
+  color: #09d3ac;
+  text-transform: uppercase;
+  display: block;
+}
+
+.main-text{
+  font-family: Poppins-Bold;
+  font-size: 40px;
+}
+
+@media only screen and (max-width: 823px) {
+  .App-header {
+    font-size: calc(8px + 2vmin);
+  }
+  
+  .counter-ring{
+    width: 70px;
+    height: 70px;
+    margin-right: 10px;
+    padding: 15px;
+  }
+  
+  .counter-no{
+    font-size: 20px;
+    padding-bottom: 6px;
+  }
+  
+  .counter-text{
+    font-size: 8px;
+  }
+  
+  .main-text{
+    font-size: 30px;
+  }
 }
