@@ -15,6 +15,7 @@ body {
   font-family: "Open Sans", sans-serif;
 }
 
+
 a {
   color: #1bb1dc;
   transition: 0.5s;
@@ -513,7 +514,7 @@ h6 {
 --------------------------------*/
 
 #about {
-  padding: 80px 0;
+  padding: 140px 0 60px !important;
 }
 
 #about .about-content {
@@ -593,7 +594,7 @@ h6 {
 --------------------------------*/
 
 #services {
-  padding: 60px 0 40px 0;
+  padding: 100px 0 40px 0;
 }
 
 #services .box {
@@ -651,7 +652,11 @@ h6 {
 --------------------------------*/
 
 #why-us {
-  padding: 60px 0;
+  padding: 100px 0 60px;
+}
+
+.why-us-content {
+  color: #535074;
 }
 
 #why-us .why-us-content .features {
@@ -1491,8 +1496,8 @@ h6 {
   }
 
   .lb-image{
-    height: 800px !important;
-    width: 800px !important;
+    height: 500px !important;
+    width: 500px !important;
   }
 }
 
