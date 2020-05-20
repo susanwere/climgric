@@ -57,7 +57,7 @@ h6 {
 .back-to-top {
   position: fixed;
   display: none;
-  background: #ff6c23;
+  background: #c31c2d;
   color: #fff;
   width: 44px;
   height: 44px;
@@ -161,11 +161,11 @@ h6 {
 --------------------------------------------------------------*/
 
 #header {
-  height: 110px;
+  height: 60px;
   transition: all 0.5s;
   z-index: 997;
   transition: all 0.5s;
-  padding: 20px 0;
+  padding: 5px 0;
   position: fixed;
   left: 0;
   top: 0;
@@ -187,30 +187,15 @@ h6 {
   display: none;
 }
 
-#header .logo h1 {
-  font-size: 36px !important;
-  margin: 0;
-  padding: 0;
-  line-height: 1;
-  font-weight: 400 !important;
-  letter-spacing: 3px;
-  text-transform: uppercase;
-}
-
-#header .logo h1 a,
-#header .logo h1 a:hover {
-  color: #FF6C23;
-  text-decoration: none;
-}
-
 .scrollto{
   font-size: 36px !important;
 }
 
 #header .logo img {
   padding: 0;
-  margin: 7px 0;
-  max-height: 26px;
+  margin-top: -20px;
+  float: left;
+  padding-bottom: 25px;
 }
 
 .main-pages {
@@ -226,13 +211,13 @@ h6 {
   height: 100vh;
   position: relative;
   background: linear-gradient(
-    rgba(20,20,20, .5), 
-    rgba(20,20,20, .5)), url("../img/bg6.jpg") center top no-repeat;
+    rgba(20,20,20, .6), 
+    rgba(20,20,20, .6)), url("../img/bg6.jpg") center top no-repeat;
   background-size: cover;
 }
 
 #intro .intro-info h2 {
-  color: #FF6C23;
+  color: #c31c2d;
   margin-bottom: 40px;
   font-size: 48px;
   font-weight: 700;
@@ -253,7 +238,7 @@ h6 {
   padding: 10px 32px;
   border-radius: 4px;
   transition: 0.5s;
-  color: #FF6C23;
+  color: #c31c2d;
   background: #FFF;
   margin-top: 20px;
   margin-left: auto;
@@ -266,7 +251,32 @@ h6 {
 
 #intro .intro-info .btn-get-started:hover,
 #intro .intro-info .btn-services:hover {
-  background: #FF6C23;
+  background: #c31c2d;
+  color: #fff;
+}
+
+.btn-join-us{
+  font-family: "Montserrat", sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 10px 32px;
+  border-radius: 4px;
+  transition: 0.5s;
+  color: #fff;
+  background: #c31c2d;
+  margin-left: auto;
+  margin-right: auto;
+  -webkit-transition: background-color 2s ease-out;
+  -moz-transition: background-color 2s ease-out;
+  -o-transition: background-color 2s ease-out;
+  transition: background-color 2s ease-out;
+}
+
+.btn-join-us:hover {
+  background: #6cbe42;
   color: #fff;
 }
 
@@ -286,6 +296,7 @@ h6 {
   margin: 0;
   padding: 0;
   list-style: none;
+  padding-bottom: 5px;
 }
 
 .main-nav > ul > li {
@@ -297,7 +308,7 @@ h6 {
 .main-nav a {
   display: block;
   position: relative;
-  color: #9DC43A;
+  color: #6cbe42;
   padding: 10px 15px;
   transition: 0.3s;
   font-size: 14px;
@@ -309,7 +320,7 @@ h6 {
 .main-nav a:hover,
 .main-nav .active > a,
 .main-nav li:hover > a {
-  color: #FF6C23;
+  color: #c31c2d;
   text-decoration: none;
 }
 
@@ -390,7 +401,7 @@ h6 {
   left: -260px;
   width: 260px;
   padding-top: 18px;
-  background: rgba(157, 196, 58, 0.8);
+  background: #6cbe42;
   transition: 0.4s;
 }
 
@@ -457,7 +468,7 @@ h6 {
 
 .mobile-nav-toggle i {
   margin: 18px 18px 0 0;
-  color: #9dc43a;
+  color: #6cbe42;
 }
 
 .mobile-nav-overly {
@@ -493,7 +504,7 @@ h6 {
 
 .section-header h3 {
   font-size: 36px;
-  color: #ff6c23;
+  color: #c31c2d;
   text-align: center;
   font-weight: 700;
   position: relative;
@@ -528,7 +539,7 @@ h6 {
 }
 
 #about .about-content h2 {
-  color: #FF6C23;
+  color: #c31c2d;
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
 }
@@ -680,7 +691,7 @@ h6 {
   font-size: 24px;
   font-weight: 600;
   margin-left: 56px;
-  color: #FF6C23;
+  color: #c31c2d;
   margin-bottom: 5px;
 }
 
@@ -743,7 +754,7 @@ h6 {
 }
 
 #call-to-action .cta-btn:hover {
-  background: #ff6c23;
+  background: #c31c2d;
   border: 3px solid #fff;
 }
 
@@ -865,7 +876,7 @@ h6 {
 }
 
 .ion{
-  color: #ff6c23;
+  color: #c31c2d;
 }
 
 #portfolio .portfolio-item .portfolio-wrap .portfolio-info .link-preview,
@@ -959,7 +970,7 @@ h6 {
 }
 
 #testimonials .owl-dot.active {
-  background-color: #ff6c23;
+  background-color: #c31c2d;
 }
 
 /* Team Section
@@ -1261,7 +1272,7 @@ h6 {
   padding: 2px 0 2px 0;
   line-height: 1;
   font-family: "Montserrat", sans-serif;
-  color: #ff6c23;
+  color: #c31c2d;
   font-weight: 400;
   letter-spacing: 3px;
   text-transform: uppercase;
@@ -1278,7 +1289,7 @@ h6 {
 #footer .footer-top .social-links a {
   font-size: 18px;
   display: inline-block;
-  background: #FF6C23;
+  background: #c31c2d;
   color: #fff;
   line-height: 1;
   padding: 8px 0;
@@ -1291,14 +1302,14 @@ h6 {
 }
 
 #footer .footer-top .social-links a:hover {
-  background: #9dc43a;
+  background: #6cbe42;
   color: #fff;
 }
 
 #footer .footer-top h4 {
   font-size: 14px;
   font-weight: bold;
-  color: #ff6c23;
+  color: #c31c2d;
   text-transform: uppercase;
   position: relative;
   padding-bottom: 10px;
@@ -1323,11 +1334,11 @@ h6 {
 }
 
 #footer .footer-top .footer-links ul a {
-  color: #9dc43a;
+  color: #6cbe42;
 }
 
 #footer .footer-top .footer-links ul a:hover {
-  color: #ff6c23;
+  color: #c31c2d;
 }
 
 #footer .footer-top .footer-contact {
@@ -1538,6 +1549,7 @@ h6 {
 @media (max-width: 768px) {
   .back-to-top {
     bottom: 15px;
+    right: 22px;
   }
 
   #faq #faq-list a {
@@ -1556,7 +1568,7 @@ h6 {
 
 @media (max-width: 767px) {
   #intro {
-    height: auto;
+    height: 100vh;
     padding: 80px 0 60px 0;
   }
 
@@ -1607,13 +1619,26 @@ h6 {
     height: 300px !important;
     width: 300px !important;
   }
-
-  .who-we-are-content{
-    margin-left: 30px !important;
-  }
 }
 
 .about-section{
   margin-bottom: 100px;
   display: inherit;
 }
+
+.team-image {
+  max-height: 400px;
+}
+
+#about .about-content ul li i {
+    color: #6cbe42 !important;
+    font-size: 16px !important;
+}
+
+.social-links a i {
+  font-size: 20px;
+  color: #6cbe42;
+  margin-left: 10px;
+
+}
+
