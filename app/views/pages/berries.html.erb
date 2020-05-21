@@ -1,0 +1,124 @@
+<header id="header">
+  <div class="container">
+
+    <div class="logo float-left">
+      <%= image_tag "logo-black.png", height: '100' %>
+    </div>
+
+    <nav class="main-nav float-right d-none d-lg-block">
+      <ul>
+        <li><a href='/'>Home</a></li>
+        <li><a href="about">About Us</a></li>
+        <li class="active"><a href="berries">Our Berries</a></li>
+        <li><a href="team">Our Team</a></li>
+        <li><a href="contact">Contact Us</a></li>
+      </ul>
+    </nav>
+
+  </div>
+</header>
+
+<div id="main">
+  <section id="services" class="section-bg">
+    <div class="container">
+
+      <header class="section-header">
+        <h3>Our Berries</h3>
+      </header>
+
+      <div class="row">
+
+        <div class="col-md-6 col-lg-4 wow bounceInUp mt-5" data-wow-duration="1.4s">
+          <div class="card">
+            <%= image_tag "strawberry.jpg", height: '230', class: "card-img-top" %>
+            <div class="card-body">
+              <p class="card-text">Strawberries</p>
+              <a href="<%=image_path 'strawberry.jpg' %>" class="link-preview float-right" data-lightbox="fruit" data-title="Strawberries"
+                title="Preview" height="180px" width="180px"><i class="ion ion-eye"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4 wow bounceInUp mt-5" data-wow-duration="1.4s">
+          <div class="card">
+            <%= image_tag "blueberries.jpg", height: '230', class: "card-img-top" %>
+            <div class="card-body">
+              <p class="card-text">Blueberries</p>
+              <a href="<%= asset_path 'blueberries.jpg' %>" class="link-preview float-right" data-lightbox="fruit"
+                data-title="Blueberries" title="Preview" height="180px" width="180px"><i class="ion ion-eye"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4 wow bounceInUp mt-5" data-wow-duration="1.4s">
+          <div class="card">
+            <%= image_tag "raspberries.jpg", height: '230', class: "card-img-top" %>
+            <div class="card-body">
+              <p class="card-text">Raspberries</p>
+              <a href="<%= asset_path 'raspberries.jpg' %>" class="link-preview float-right" data-lightbox="fruit"
+                data-title="Raspberries" title="Preview"><i class="ion ion-eye"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4 wow bounceInUp mt-5" data-wow-duration="1.4s">
+          <div class="card">
+            <%= image_tag "gooseberries.jpg", height: '230', class: "card-img-top" %>
+            <div class="card-body">
+              <p class="card-text">Gooseberries</p>
+              <a href="<%= asset_path 'gooseberries.jpg' %>" class="link-preview float-right" data-lightbox="fruit"
+                data-title="Gooseberries" title="Preview"><i class="ion ion-eye"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4 wow bounceInUp mt-5" data-wow-duration="1.4s">
+          <div class="card">
+            <%= image_tag "blackberry.jpg", height: '230', class: "card-img-top" %>
+            <div class="card-body">
+              <p class="card-text">Blackberries</p>
+              <a href="<%= asset_path 'blackberry.jpg' %>" class="link-preview float-right" data-lightbox="fruit"
+                data-title="Gooseberries" title="Preview"><i class="ion ion-eye"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4 wow bounceInUp mt-5" data-wow-duration="1.4s">
+          <div class="card">
+            <%= image_tag "wineberry.png", height: '230', class: "card-img-top" %>
+            <div class="card-body">
+              <p class="card-text">Wineberries</p>
+              <a href="<%= asset_path 'wineberry.png' %>" class="link-preview float-right" data-lightbox="fruit"
+                data-title="Gooseberries" title="Preview"><i class="ion ion-eye"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row justify-content-center">
+        <div class="col-md-6 col-lg-4 wow bounceInUp mt-5" data-wow-duration="1.4s">
+          <div class="card">
+            <%= image_tag "mulberry.jpg", height: '230', class: "card-img-top" %>
+            <div class="card-body">
+              <p class="card-text">Mulberries</p>
+              <a href="<%= asset_path 'mulberry.jpg' %>" class="link-preview float-right" data-lightbox="fruit"
+                data-title="Gooseberries" title="Preview"><i class="ion ion-eye"></i></a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+</div>
+
+<footer id="footer" class="section-bg">
+  <div class="container">
+    <div class="copyright">
+      &copy; Copyright <strong style="color: #c31c2d;"> Climgric</strong>. All Rights Reserved
+    </div>
+  </div>
+</footer>
+
+<a href="berries" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
