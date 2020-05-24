@@ -2,7 +2,8 @@ class ContactController < ApplicationController
 
   def create
     @contact = Contact.create(contact_params)
-    if @contact.valid?
+    if @contact.save
+      ContactMailer.with(contact: @contact).received_email.deliver_now
       redirect_to '/', notice: "Thank you! We'll be in touch."
     else
       @first_key, @first_value = @contact.errors.messages.first
