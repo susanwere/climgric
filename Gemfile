@@ -66,3 +66,6 @@ gem "font-awesome-rails"
 gem 'ionicons-rails'
 gem 'owlcarousel-rails'
 gem 'jquery-ui-rails'
+gem 'toastr-rails'
+gem 'phonelib'
+gem 'email_validator'

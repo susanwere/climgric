@@ -26,4 +26,5 @@
 //= require wow/wow.min.js
 //= require main.js
 //= require activestorage
+//= require toastr
 //= require_tree .

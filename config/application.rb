@@ -13,6 +13,7 @@ module Climgric
     config.autoload_paths += %W[#{config.root}/lib #{config.root}/presenters] # Autoload modules in /lib
     config.eager_load_paths += %W[#{config.root}/lib]
     config.serve_static_assets = true
+    config.action_mailer.asset_host = "https://climgric.herokuapp.com/"
 
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration can go into files in config/initializers
