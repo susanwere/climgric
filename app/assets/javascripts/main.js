@@ -1,6 +1,28 @@
 $( document ).on('turbolinks:load', function() {
   "use strict";
 
+  let success_div = $('div#success_notice').removeClass('hide')
+  let success_message = success_div.html()
+
+  let error_div = $('div#error_notice').removeClass('hide')
+  let error_message = error_div.html()
+
+  let notice_div = $('div#info_notice').removeClass('hide')
+  let notice_message = notice_div.html()
+  
+
+  if (success_message){
+      toastr['success'](success_message)
+      success_div.html('').replaceWith('')
+  }else if(error_message){
+      toastr['error'](error_message)
+      error_div.html('').replaceWith('')
+  }else if(notice_message){
+      toastr['info'](notice_message)
+      notice_div.html('').replaceWith('')
+  }
+
+
   // Preloader (if the #preloader div exists)
   $(window).on('load', function () {
     if ($('#preloader').length) {

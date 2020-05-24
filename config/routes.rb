@@ -4,5 +4,6 @@ Rails.application.routes.draw do
   get '/berries', to: 'pages#berries'
   get '/team', to: 'pages#team'
   get '/contact', to: 'contact#index'
+  post '/contact', to: 'contact#create'
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
