@@ -173,6 +173,14 @@
                       <span class="subheading">Hello!!</span>
                       <h2>You have a new message from <%= @contact.first_name %> <%= @contact.last_name %></h2><br />
                       <p><%= @contact.message %></p><br />
+                       <% unless @cart.line_items.empty? %>
+                        <div style="margin-top: 30px; margin-bottom: 30px">
+                          <h3 style="color: #fff">These are the berries ordered. </h3>  <br />
+                          <% @cart.line_items.each do |line_item| %>
+                              <%= line_item.quantity * 0.25 %> kgs of <%= line_item.berry.title %> <br /> <br />
+                          <% end %>
+                        </div>
+                      <% end %>
                       <p><a href="https://mail.google.com/mail/?view=cm&fs=1&to=<%= @contact.email %>" class="btn btn-primary">Reply to <%= @contact.first_name %></a></p> <br />
                       <p>Or call on <%= @contact.phone %></p>
                     </div>

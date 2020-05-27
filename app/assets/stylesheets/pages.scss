@@ -219,8 +219,8 @@ h6 {
   height: 100vh;
   position: relative;
   background: linear-gradient(
-    rgba(20,20,20, .6), 
-    rgba(20,20,20, .6)), url('background-image.jpg') center top no-repeat;
+    rgba(20,20,20, .65), 
+    rgba(20,20,20, .65)), url('bg.jpg') center top no-repeat;
   background-size: cover;
 }
 
@@ -1652,5 +1652,87 @@ h6 {
   color: #6cbe42;
   margin-left: 10px;
 
+}
+
+#cart {
+  h2 {
+    color: #7ac313;
+  }
+
+  tr {
+    color: #c31c2d;
+    padding: 5px;
+  }
+
+  td {
+    padding: 10px !important;
+  }
+
+  .empty-button {
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 10px 10px;
+    border-radius: 4px;
+    transition: 0.5s;
+    color: #c31c2d;
+    background-color: #fff;
+    border: 1px solid #c31c2d;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .checkout-button {
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 10px 10px;
+    border-radius: 4px;
+    transition: 0.5s;
+    color: #7ac313;
+    border: 1px solid #7ac313;
+    background: #FFF;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .empty-button:hover {
+    background: #c31c2d;
+    color: #fff;
+    border: 1px solid #c31c2d;
+  }
+
+  .checkout-button:hover {
+    background: #7ac313;
+    color: #fff;
+    border: 1px solid #7ac313;
+  }
+
+  .berry-title {
+   padding-left: 10px;
+  }
+}
+
+.add-to-cart {
+  font-size: 13px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 10px 10px;
+  border-radius: 4px;
+  transition: 0.5s;
+  background-color: #7ac313;
+  border: 1px solid #7ac313;
+  color: #FFF;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
 }
 

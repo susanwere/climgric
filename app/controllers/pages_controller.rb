@@ -1,4 +1,6 @@
 class PagesController < ApplicationController
+  include CurrentCart
+  before_action :set_cart
   def home
   end
 
@@ -6,6 +8,7 @@ class PagesController < ApplicationController
   end
 
   def berries
+    @berries = Berry.all
   end
 
   def team

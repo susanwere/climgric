@@ -1,0 +1,16 @@
+<% unless cart.line_items.empty?  %>
+<h2>Your Cart</h2>
+<table>
+  <%= render(@cart.line_items) %>
+</table>
+
+<div class="row">
+  <div class="col-md-6">
+    <%= button_to 'Checkout', contact_path, method: :get, class: "checkout-button" %>
+  </div>
+  <div class="col-md-6">
+    <%= button_to 'Empty cart', @cart, method: :delete,  data: { confirm: 'Are you sure?' }, class: "empty-button" %>
+  </div>
+</div>
+<% end %>
+

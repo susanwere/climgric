@@ -2,6 +2,10 @@
     <div id="success_notice">
         <%= notice %>
     </div>
+<% elsif notice %>
+  <div id="error_notice">
+    <%= notice %>
+  </div>
 <% end %>
 
 <header id="header">
@@ -36,7 +40,6 @@
         </div>
       </div>
     </div>
-
   </div>
 </section>
 
