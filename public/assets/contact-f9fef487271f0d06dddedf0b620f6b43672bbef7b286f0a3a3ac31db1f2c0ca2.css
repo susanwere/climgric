@@ -1,0 +1,540 @@
+/* line 5, /Users/susanwere/Documents/Projects/Personal/climgric/app/assets/stylesheets/contact.scss */
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+/* line 11, /Users/susanwere/Documents/Projects/Personal/climgric/app/assets/stylesheets/contact.scss */
+body, html {
+  height: 100%;
+  font-family: "Open Sans", sans-serif, sans-serif;
+}
+
+/*---------------------------------------------*/
+/* line 17, /Users/susanwere/Documents/Projects/Personal/climgric/app/assets/stylesheets/contact.scss */
+a {
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  line-height: 1.7;
+  color: #666666;
+  margin: 0px;
+  transition: all 0.4s;
+  -webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+}
+
+/* line 29, /Users/susanwere/Documents/Projects/Personal/climgric/app/assets/stylesheets/contact.scss */
+a:focus {
+  outline: none !important;
+}
+
+/* line 33, /Users/susanwere/Documents/Projects/Personal/climgric/app/assets/stylesheets/contact.scss */
+a:hover {
+  text-decoration: none;
+}
+
+/*---------------------------------------------*/
+/* line 38, /Users/susanwere/Documents/Projects/Personal/climgric/app/assets/stylesheets/contact.scss */
+h1, h2, h3, h4, h5, h6 {
+  margin: 0px;
+}
+
+/* line 42, /Users/susanwere/Documents/Projects/Personal/climgric/app/assets/stylesheets/contact.scss */
+p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  line-height: 1.7;
+  color: #666666;
+  margin: 0px;
+}
+
+/* line 50, /Users/susanwere/Documents/Projects/Personal/climgric/app/assets/stylesheets/contact.scss */
+ul, li {
+  margin: 0px;
+  list-style-type: none;
+}
+
+/*---------------------------------------------*/
+/* line 57, /Users/susanwere/Documents/Projects/Personal/climgric/app/assets/stylesheets/contact.scss */
+input {
+  outline: none;
+  border: none;
+}
+
+/* line 62, /Users/susanwere/Documents/Projects/Personal/climgric/app/assets/stylesheets/contact.scss */
+textarea {
+  outline: none;
+  border: none;
+}
+
+/* line 67, /Users/susanwere/Documents/Projects/Personal/climgric/app/assets/stylesheets/contact.scss */
+textarea:focus, input:focus {
+  border-color: transparent !important;
+}
+
+/* line 71, /Users/susanwere/Documents/Projects/Personal/climgric/app/assets/stylesheets/contact.scss */
+input:focus::-webkit-input-placeholder {
+  color: transparent;
+}
+
+/* line 72, /Users/susanwere/Documents/Projects/Personal/climgric/app/assets/stylesheets/contact.scss */
+input:focus:-moz-placeholder {
+  color: transparent;
+}
+
+/* line 73, /Users/susanwere/Documents/Projects/Personal/climgric/app/assets/stylesheets/contact.scss */
+input:focus::-moz-placeholder {
+  color: transparent;
+}
+
+/* line 74, /Users/susanwere/Documents/Projects/Personal/climgric/app/assets/stylesheets/contact.scss */
+input:focus:-ms-input-placeholder {
+  color: transparent;
+}
+
+/* line 76, /Users/susanwere/Documents/Projects/Personal/climgric/app/assets/stylesheets/contact.scss */
+textarea:focus::-webkit-input-placeholder {
+  color: transparent;
+}
+
+/* line 77, /Users/susanwere/Documents/Projects/Personal/climgric/app/assets/stylesheets/contact.scss */
+textarea:focus:-moz-placeholder {
+  color: transparent;
+}
+
+/* line 78, /Users/susanwere/Documents/Projects/Personal/climgric/app/assets/stylesheets/contact.scss */
+textarea:focus::-moz-placeholder {
+  color: transparent;
+}
+
+/* line 79, /Users/susanwere/Documents/Projects/Personal/climgric/app/assets/stylesheets/contact.scss */
+textarea:focus:-ms-input-placeholder {
+  color: transparent;
+}
+
+/* line 81, /Users/susanwere/Documents/Projects/Personal/climgric/app/assets/stylesheets/contact.scss */
+input::-webkit-input-placeholder {
+  color: #adadad;
+}
+
+/* line 82, /Users/susanwere/Documents/Projects/Personal/climgric/app/assets/stylesheets/contact.scss */
+input:-moz-placeholder {
+  color: #adadad;
+}
+
+/* line 83, /Users/susanwere/Documents/Projects/Personal/climgric/app/assets/stylesheets/contact.scss */
+input::-moz-placeholder {
+  color: #adadad;
+}
+
+/* line 84, /Users/susanwere/Documents/Projects/Personal/climgric/app/assets/stylesheets/contact.scss */
+input:-ms-input-placeholder {
+  color: #adadad;
+}
+
+/* line 86, /Users/susanwere/Documents/Projects/Personal/climgric/app/assets/stylesheets/contact.scss */
+textarea::-webkit-input-placeholder {
+  color: #adadad;
+}
+
+/* line 87, /Users/susanwere/Documents/Projects/Personal/climgric/app/assets/stylesheets/contact.scss */
+textarea:-moz-placeholder {
+  color: #adadad;
+}
+
+/* line 88, /Users/susanwere/Documents/Projects/Personal/climgric/app/assets/stylesheets/contact.scss */
+textarea::-moz-placeholder {
+  color: #adadad;
+}
+
+/* line 89, /Users/susanwere/Documents/Projects/Personal/climgric/app/assets/stylesheets/contact.scss */
+textarea:-ms-input-placeholder {
+  color: #adadad;
+}
+
+/*---------------------------------------------*/
+/* line 92, /Users/susanwere/Documents/Projects/Personal/climgric/app/assets/stylesheets/contact.scss */
+button {
+  outline: none !important;
+  border: none;
+  background: transparent;
+}
+
+/* line 98, /Users/susanwere/Documents/Projects/Personal/climgric/app/assets/stylesheets/contact.scss */
+button:hover {
+  cursor: pointer;
+}
+
+/* line 102, /Users/susanwere/Documents/Projects/Personal/climgric/app/assets/stylesheets/contact.scss */
+iframe {
+  border: none !important;
+}
+
+/*//////////////////////////////////////////////////////////////////
+[ utility ]*/
+/*==================================================================
+[ Text ]*/
+/* line 111, /Users/susanwere/Documents/Projects/Personal/climgric/app/assets/stylesheets/contact.scss */
+.txt1 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+  line-height: 1.2;
+  color: #fff;
+  padding-right: 25px;
+  padding-bottom: 20px;
+}
+
+/* line 120, /Users/susanwere/Documents/Projects/Personal/climgric/app/assets/stylesheets/contact.scss */
+.txt2 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 15px;
+  line-height: 1.6;
+  color: #999999;
+}
+
+/* line 127, /Users/susanwere/Documents/Projects/Personal/climgric/app/assets/stylesheets/contact.scss */
+.txt3 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 15px;
+  line-height: 1.6;
+  color: #6cbe42;
+}
+
+/*==================================================================
+[ Size ]*/
+/* line 136, /Users/susanwere/Documents/Projects/Personal/climgric/app/assets/stylesheets/contact.scss */
+.size1 {
+  width: 355px;
+  max-width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  padding-bottom: 47px;
+}
+
+/* line 144, /Users/susanwere/Documents/Projects/Personal/climgric/app/assets/stylesheets/contact.scss */
+.size2 {
+  width: calc(100% - 43px);
+  display: flex;
+  flex-direction: column;
+}
+
+/*//////////////////////////////////////////////////////////////////
+[ Contact ]*/
+/* line 154, /Users/susanwere/Documents/Projects/Personal/climgric/app/assets/stylesheets/contact.scss */
+.container-contact100 {
+  width: 100%;
+  min-height: 90vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 100px 15px 15px;
+  background: #f2f2f2;
+}
+
+/* line 170, /Users/susanwere/Documents/Projects/Personal/climgric/app/assets/stylesheets/contact.scss */
+.wrap-contact100 {
+  width: 1120px;
+  background: #fff;
+  overflow: hidden;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  flex-direction: row-reverse;
+}
+
+/*==================================================================
+[ Contact more ]*/
+/* line 187, /Users/susanwere/Documents/Projects/Personal/climgric/app/assets/stylesheets/contact.scss */
+.contact100-more {
+  width: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  z-index: 1;
+  padding: 30px 15px 0px 15px;
+}
+
+/* line 197, /Users/susanwere/Documents/Projects/Personal/climgric/app/assets/stylesheets/contact.scss */
+.flex-col-c-m {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* line 204, /Users/susanwere/Documents/Projects/Personal/climgric/app/assets/stylesheets/contact.scss */
+.contact100-more::before {
+  content: "";
+  display: block;
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.8);
+}
+
+/*==================================================================
+[ Form ]*/
+/* line 221, /Users/susanwere/Documents/Projects/Personal/climgric/app/assets/stylesheets/contact.scss */
+.contact100-form {
+  width: 50%;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 26px 25px 43px 25px;
+}
+
+/* line 232, /Users/susanwere/Documents/Projects/Personal/climgric/app/assets/stylesheets/contact.scss */
+.contact100-form-title {
+  width: 100%;
+  display: block;
+  font-family: "Open Sans", sans-serif;
+  font-size: 30px;
+  color: #333333;
+  line-height: 1.2;
+  text-align: center;
+}
+
+/*------------------------------------------------------------------
+[ Input ]*/
+/* line 247, /Users/susanwere/Documents/Projects/Personal/climgric/app/assets/stylesheets/contact.scss */
+.wrap-input100 {
+  width: 100%;
+  position: relative;
+  border: 1px solid #e6e6e6;
+}
+
+/* line 253, /Users/susanwere/Documents/Projects/Personal/climgric/app/assets/stylesheets/contact.scss */
+.rs1-wrap-input100,
+.rs2-wrap-input100 {
+  width: 50%;
+}
+
+/* line 258, /Users/susanwere/Documents/Projects/Personal/climgric/app/assets/stylesheets/contact.scss */
+.rs2-wrap-input100 {
+  border-left: none;
+}
+
+/* line 262, /Users/susanwere/Documents/Projects/Personal/climgric/app/assets/stylesheets/contact.scss */
+.label-input100 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 12px;
+  color: #555555;
+  line-height: 1.5;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  min-height: 20px;
+  border: 1px solid #e6e6e6;
+  border-bottom: none;
+  padding: 10px 25px;
+  margin-top: 15px;
+  margin-bottom: 0;
+}
+
+/* line 285, /Users/susanwere/Documents/Projects/Personal/climgric/app/assets/stylesheets/contact.scss */
+.input100 {
+  display: block;
+  width: 100%;
+  background: transparent;
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+  color: #666666;
+  line-height: 1.2;
+  padding: 0 25px;
+}
+
+/* line 296, /Users/susanwere/Documents/Projects/Personal/climgric/app/assets/stylesheets/contact.scss */
+input.input100 {
+  height: 55px;
+}
+
+/* line 301, /Users/susanwere/Documents/Projects/Personal/climgric/app/assets/stylesheets/contact.scss */
+textarea.input100 {
+  min-height: 60px;
+  padding-top: 19px;
+  padding-bottom: 15px;
+}
+
+/*---------------------------------------------*/
+/* line 309, /Users/susanwere/Documents/Projects/Personal/climgric/app/assets/stylesheets/contact.scss */
+.focus-input100 {
+  position: absolute;
+  display: block;
+  width: calc(100% + 2px);
+  height: calc(100% + 2px);
+  top: -1px;
+  left: -1px;
+  pointer-events: none;
+  border: 1px solid #6cbe42;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.4s;
+  transform: scaleX(1.1) scaleY(1.3);
+}
+
+/* line 334, /Users/susanwere/Documents/Projects/Personal/climgric/app/assets/stylesheets/contact.scss */
+.input100:focus + .focus-input100 {
+  visibility: visible;
+  opacity: 1;
+  transform: scale(1);
+}
+
+/*------------------------------------------------------------------
+[ Button ]*/
+/* line 349, /Users/susanwere/Documents/Projects/Personal/climgric/app/assets/stylesheets/contact.scss */
+.container-contact100-form-btn {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-top: 23px;
+}
+
+/* line 361, /Users/susanwere/Documents/Projects/Personal/climgric/app/assets/stylesheets/contact.scss */
+.contact100-form-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
+  min-width: 200px;
+  height: 50px;
+  border-radius: 2px;
+  background: #6cbe42;
+  font-family: Montserrat-Bold;
+  font-size: 12px;
+  color: #fff;
+  line-height: 1.2;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: all 0.4s;
+}
+
+/* line 388, /Users/susanwere/Documents/Projects/Personal/climgric/app/assets/stylesheets/contact.scss */
+.contact100-form-btn:hover {
+  background: #c31c2d;
+}
+
+/*------------------------------------------------------------------
+[ Responsive ]*/
+@media (max-width: 992px) {
+  /* line 398, /Users/susanwere/Documents/Projects/Personal/climgric/app/assets/stylesheets/contact.scss */
+  .contact100-form {
+    width: 60%;
+    padding: 56px 30px 63px 30px;
+  }
+
+  /* line 403, /Users/susanwere/Documents/Projects/Personal/climgric/app/assets/stylesheets/contact.scss */
+  .contact100-more {
+    width: 40%;
+  }
+}
+@media (max-width: 768px) {
+  /* line 409, /Users/susanwere/Documents/Projects/Personal/climgric/app/assets/stylesheets/contact.scss */
+  .contact100-form {
+    width: 100%;
+  }
+
+  /* line 413, /Users/susanwere/Documents/Projects/Personal/climgric/app/assets/stylesheets/contact.scss */
+  .contact100-more {
+    width: 100%;
+  }
+}
+@media (max-width: 576px) {
+  /* line 419, /Users/susanwere/Documents/Projects/Personal/climgric/app/assets/stylesheets/contact.scss */
+  .contact100-form {
+    padding: 56px 15px 63px 15px;
+  }
+
+  /* line 423, /Users/susanwere/Documents/Projects/Personal/climgric/app/assets/stylesheets/contact.scss */
+  .rs1-wrap-input100,
+  .rs2-wrap-input100 {
+    width: 100%;
+  }
+
+  /* line 428, /Users/susanwere/Documents/Projects/Personal/climgric/app/assets/stylesheets/contact.scss */
+  .rs2-wrap-input100 {
+    border-left: 1px solid #e6e6e6;
+    border-top: none;
+  }
+}
+/*------------------------------------------------------------------
+[ Alert validate ]*/
+/* line 438, /Users/susanwere/Documents/Projects/Personal/climgric/app/assets/stylesheets/contact.scss */
+.validate-input {
+  position: relative;
+}
+
+/* line 442, /Users/susanwere/Documents/Projects/Personal/climgric/app/assets/stylesheets/contact.scss */
+.alert-validate::before {
+  content: attr(data-validate);
+  position: absolute;
+  max-width: 70%;
+  background-color: #fff;
+  border: 1px solid #c80000;
+  border-radius: 2px;
+  padding: 4px 25px 4px 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 2px;
+  pointer-events: none;
+  font-family: "Open Sans", sans-serif;
+  color: #c80000;
+  font-size: 13px;
+  line-height: 1.4;
+  text-align: left;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.4s;
+}
+
+/* line 474, /Users/susanwere/Documents/Projects/Personal/climgric/app/assets/stylesheets/contact.scss */
+.alert-validate::after {
+  content: "\f12a";
+  font-family: FontAwesome;
+  display: block;
+  position: absolute;
+  color: #c80000;
+  font-size: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 8px;
+}
+
+/* line 490, /Users/susanwere/Documents/Projects/Personal/climgric/app/assets/stylesheets/contact.scss */
+.alert-validate:hover:before {
+  visibility: visible;
+  opacity: 1;
+}
+
+@media (max-width: 992px) {
+  /* line 496, /Users/susanwere/Documents/Projects/Personal/climgric/app/assets/stylesheets/contact.scss */
+  .alert-validate::before {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+/* line 503, /Users/susanwere/Documents/Projects/Personal/climgric/app/assets/stylesheets/contact.scss */
+.modal-body h2 {
+  color: #7ac313;
+}
+/* line 507, /Users/susanwere/Documents/Projects/Personal/climgric/app/assets/stylesheets/contact.scss */
+.modal-body tr {
+  color: #c31c2d;
+  padding: 5px;
+}
+/* line 512, /Users/susanwere/Documents/Projects/Personal/climgric/app/assets/stylesheets/contact.scss */
+.modal-body td {
+  padding: 10px !important;
+}
+/* line 516, /Users/susanwere/Documents/Projects/Personal/climgric/app/assets/stylesheets/contact.scss */
+.modal-body .berry-title {
+  padding-left: 10px;
+}

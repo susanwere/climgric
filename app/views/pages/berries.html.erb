@@ -1,3 +1,13 @@
+<% if notice=="Thank you! We'll be in touch." %>
+  <div id="success_notice">
+    <%= notice %>
+  </div>
+<% elsif notice %>
+  <div id="error_notice">
+    <%= notice %>
+  </div>
+<% end %>
+
 <header id="header">
   <div class="container">
 
@@ -26,89 +36,33 @@
         <h3>Our Berries</h3>
       </header>
 
-      <div class="row">
-
-        <div class="col-md-6 col-lg-4 wow bounceInUp mt-5" data-wow-duration="1.4s">
-          <div class="card">
-            <%= image_tag "strawberry.jpg", height: '230', class: "card-img-top" %>
-            <div class="card-body">
-              <p class="card-text">Strawberries</p>
-              <a href="<%=image_path 'strawberry.jpg' %>" class="link-preview float-right" data-lightbox="fruit" data-title="Strawberries"
-                title="Preview" height="180px" width="180px"><i class="ion ion-eye"></i></a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-6 col-lg-4 wow bounceInUp mt-5" data-wow-duration="1.4s">
-          <div class="card">
-            <%= image_tag "blueberries.jpg", height: '230', class: "card-img-top" %>
-            <div class="card-body">
-              <p class="card-text">Blueberries</p>
-              <a href="<%= asset_path 'blueberries.jpg' %>" class="link-preview float-right" data-lightbox="fruit"
-                data-title="Blueberries" title="Preview" height="180px" width="180px"><i class="ion ion-eye"></i></a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-6 col-lg-4 wow bounceInUp mt-5" data-wow-duration="1.4s">
-          <div class="card">
-            <%= image_tag "raspberries.jpg", height: '230', class: "card-img-top" %>
-            <div class="card-body">
-              <p class="card-text">Raspberries</p>
-              <a href="<%= asset_path 'raspberries.jpg' %>" class="link-preview float-right" data-lightbox="fruit"
-                data-title="Raspberries" title="Preview"><i class="ion ion-eye"></i></a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-6 col-lg-4 wow bounceInUp mt-5" data-wow-duration="1.4s">
-          <div class="card">
-            <%= image_tag "gooseberries.jpg", height: '230', class: "card-img-top" %>
-            <div class="card-body">
-              <p class="card-text">Gooseberries</p>
-              <a href="<%= asset_path 'gooseberries.jpg' %>" class="link-preview float-right" data-lightbox="fruit"
-                data-title="Gooseberries" title="Preview"><i class="ion ion-eye"></i></a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-6 col-lg-4 wow bounceInUp mt-5" data-wow-duration="1.4s">
-          <div class="card">
-            <%= image_tag "blackberry.jpg", height: '230', class: "card-img-top" %>
-            <div class="card-body">
-              <p class="card-text">Blackberries</p>
-              <a href="<%= asset_path 'blackberry.jpg' %>" class="link-preview float-right" data-lightbox="fruit"
-                data-title="Gooseberries" title="Preview"><i class="ion ion-eye"></i></a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-6 col-lg-4 wow bounceInUp mt-5" data-wow-duration="1.4s">
-          <div class="card">
-            <%= image_tag "wineberry.png", height: '230', class: "card-img-top" %>
-            <div class="card-body">
-              <p class="card-text">Wineberries</p>
-              <a href="<%= asset_path 'wineberry.png' %>" class="link-preview float-right" data-lightbox="fruit"
-                data-title="Gooseberries" title="Preview"><i class="ion ion-eye"></i></a>
-            </div>
-          </div>
-        </div>
-      </div>
-
       <div class="row justify-content-center">
-        <div class="col-md-6 col-lg-4 wow bounceInUp mt-5" data-wow-duration="1.4s">
-          <div class="card">
-            <%= image_tag "mulberry.jpg", height: '230', class: "card-img-top" %>
-            <div class="card-body">
-              <p class="card-text">Mulberries</p>
-              <a href="<%= asset_path 'mulberry.jpg' %>" class="link-preview float-right" data-lightbox="fruit"
-                data-title="Gooseberries" title="Preview"><i class="ion ion-eye"></i></a>
+
+        <div class="col-md-9 row" id="berries">
+          <% @berries.each do |berry| %>
+            <div class="col-md-4 wow bounceInUp mt-5" data-wow-duration="1.4s">
+              <div class="card">
+                <%= image_tag berry.image_url, height: '230', class: "card-img-top" %>
+                <div class="card-body">
+                  <p class="card-text"><%= berry.title %></p>
+                  <a href="<%=image_path(berry.image_url)%>" class="link-preview float-right" data-lightbox="fruit" data-title="Strawberries"
+                    title="Preview" height="180px" width="180px"><i class="ion ion-eye"></i></a>
+                    <%= button_to 'Add to Cart', line_items_path(berry_id: berry), remote: true, class: 'add-to-cart' %>
+                </div>
+              </div>
             </div>
-          </div>
+          <% end %>
         </div>
 
-      </div>
+          <div class="col-md-3 row mt-5 ml-1">
+            <div id="cart">
+              <% if @cart %>
+                <%= render @cart %>
+              <% end %>
+            </div>
+          </div>
 
+      </div>
     </div>
   </section>
 </div>

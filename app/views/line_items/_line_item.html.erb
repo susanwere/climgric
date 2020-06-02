@@ -1,0 +1,8 @@
+<% if line_item == @current_item %>
+  <tr id="current_item">
+<% else %>
+  <tr>
+<% end %>
+    <td><%= line_item.quantity * 0.25 %> kgs</td>
+    <td class="berry-title"><%= line_item.berry.title %></td>
+  </tr>
