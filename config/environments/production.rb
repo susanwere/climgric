@@ -96,7 +96,7 @@ Rails.application.configure do
     address:              'smtp.gmail.com',
     port:                 587,
     domain:               'climgricafrica.com',
-    user_name:            ENV['SALES_EMAIL'],
-    password:             ENV['SALES_PASSWORD'],
+    user_name:            ENV['PURCHASES_EMAIL'],
+    password:             ENV['PURCHASES_PASSWORD'],
     authentication:       'plain' }
 end

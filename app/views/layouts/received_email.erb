@@ -11,147 +11,18 @@
       <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i" rel="stylesheet">
 
       <!-- CSS Reset : BEGIN -->
-    
-    <style>
+  </head>
 
-      .primary{
-        background: #f3a333;
-      }
-
-      .bg_white{
-        background: #ffffff;
-      }
-      .bg_light{
-        background: #fafafa;
-      }
-      .bg_black{
-        background: #000000;
-      }
-      .bg_dark{
-        background: rgba(0,0,0,.8);
-      }
-      .email-section{
-        padding:2.5em;
-      }
-
-      /*BUTTON*/
-      .btn.btn-primary{ 
-        padding: 10px 15px;
-        border-radius: 30px;
-        background: #f3a333;
-        color: #ffffff;
-      }
-
-
-
-      h1,h2,h3,h4,h5,h6{
-        font-family: 'Playfair Display', serif;
-        color: #000000;
-        margin-top: 0;
-      }
-
-      body{
+  <body width="100%" style="
+        margin: 0; 
+        padding: 0 !important; 
+        mso-line-height-rule: exactly; 
+        background-color: #222222; 
         font-family: 'Montserrat', sans-serif;
         font-weight: 400;
         font-size: 15px;
         line-height: 1.8;
-        color: rgba(0,0,0,.4);
-      }
-
-      a{
-        color: #f3a333;
-      }
-
-      table{
-      }
-      /*LOGO*/
-
-      .logo h1{
-        margin: 0;
-      }
-      .logo h1 a{
-        color: #000;
-        font-size: 20px;
-        font-weight: 700;
-        text-transform: uppercase;
-        font-family: 'Montserrat', sans-serif;
-      }
-
-      /*HERO*/
-      .hero{
-        position: relative;
-        background-size: cover; 
-        height: 400px;
-        background: linear-gradient(
-          rgba(20,20,20, .6), 
-          rgba(20,20,20, .6)), url('background-image.jpg') center top no-repeat;
-        
-        .text h2{
-            color: #ffffff;
-            font-size: 30px;
-            margin-bottom: 0;
-        }
-      }
-      /*HEADING SECTION*/
-      .heading-section{
-      }
-      .heading-section h2{
-        color: #000000;
-        font-size: 28px;
-        margin-top: 0;
-        line-height: 1.4;
-      }
-      .heading-section .subheading{
-        margin-bottom: 20px !important;
-        display: inline-block;
-        font-size: 13px;
-        text-transform: uppercase;
-        letter-spacing: 2px;
-        color: rgba(0,0,0,.4);
-        position: relative;
-      }
-      .heading-section .subheading::after{
-        position: absolute;
-        left: 0;
-        right: 0;
-        bottom: -10px;
-        content: '';
-        width: 100%;
-        height: 2px;
-        background: #f3a333;
-        margin: 0 auto;
-      }
-
-      .heading-section-white{
-        color: rgba(255,255,255,.8);
-      }
-      .heading-section-white h2{
-        font-size: 28px;
-        font-family: 
-        line-height: 1;
-        padding-bottom: 0;
-      }
-      .heading-section-white h2{
-        color: #ffffff;
-      }
-      .heading-section-white .subheading{
-        margin-bottom: 0;
-        display: inline-block;
-        font-size: 13px;
-        text-transform: uppercase;
-        letter-spacing: 2px;
-        color: rgba(255,255,255,.4);
-      }
-
-
-
-
-    </style>
-
-
-  </head>
-
-  <body width="100%" style="margin: 0; padding: 0 !important; mso-line-height-rule: exactly; background-color: #222222;">
+        color: rgba(0,0,0,.4)">
     <center style="width: 100%; background-color: #f1f1f1;">
       <div style="display: none; font-size: 1px;max-height: 0px; max-width: 0px; opacity: 0; overflow: hidden; mso-hide: all; font-family: sans-serif;">
         &zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;
@@ -160,29 +31,42 @@
         <!-- BEGIN BODY -->
         <table align="center" role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="margin: auto;">
           <tr>
-            <td class="bg_white logo" style="padding: 1em 2.5em; text-align: center">
-              <h1><a href="#">CLIMGRIC AFRICA</a></h1>
+            <td class="bg_white logo" style="padding: 1em 2.5em; text-align: center; background: #ffffff">
+              <h1><a href="#" style="color: #000;
+        font-size: 20px;
+        font-weight: 700;
+        text-transform: uppercase;
+        font-family: 'Montserrat', sans-serif;">CLIMGRIC AFRICA</a></h1>
             </td>
           </tr><!-- end tr -->
           <tr>
-            <td class="bg_white">
+            <td class="bg_white" style="background: #ffffff">
               <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
                 <tr>
-                  <td class="bg_dark email-section" style="text-align:center">
-                    <div class="heading-section heading-section-white">
-                      <span class="subheading">Hello!!</span>
-                      <h2>You have a new message from <%= @contact.first_name %> <%= @contact.last_name %></h2><br />
-                      <p><%= @contact.message %></p><br />
+                  <td class="email-section" style="text-align:center; background: rgba(0,0,0,.8); padding:2.5em">
+                    <div class="heading-section heading-section-white" style="color: rgba(255,255,255,.8)">
+                      <h6 style="font-family: 'Playfair Display', serif;">You have a new message from <%= @contact.first_name %> <%= @contact.last_name %></h6>
+                      <hr style="position: relative; border: 2px solid #6cbe42"><br />
+                      <p style="color: #fff"><%= @contact.message %></p><br />
                        <% unless @cart.line_items.empty? %>
-                        <div style="margin-top: 30px; margin-bottom: 30px">
-                          <h3 style="color: #fff">These are the berries ordered. </h3>  <br />
+                        <div style="margin-top: 30px; margin-bottom: 30px; color: #fff;">
+                          <h3 style="color: #fff; font-family: 'Playfair Display', serif;">These are the berries ordered. </h3>  <br />
                           <% @cart.line_items.each do |line_item| %>
                               <%= line_item.quantity * 0.25 %> kgs of <%= line_item.berry.title %> <br /> <br />
                           <% end %>
                         </div>
                       <% end %>
-                      <p><a href="https://mail.google.com/mail/?view=cm&fs=1&to=<%= @contact.email %>" class="btn btn-primary">Reply to <%= @contact.first_name %></a></p> <br />
-                      <p>Or call on <%= @contact.phone %></p>
+                      <p>
+                        <a 
+                          href="https://mail.google.com/mail/?view=cm&fs=1&to=<%= @contact.email %>"
+                          style="padding: 10px 15px;
+                                  border-radius: 30px;
+                                  background: #6cbe42;
+                                  color: #ffffff;">
+                                  Reply to <%= @contact.first_name %>
+                        </a>
+                      </p> <br />
+                      <p style="color: #fff">Or call on <%= @contact.phone %></p>
                     </div>
                   </td>
                 </tr><!-- end: tr -->		          
