@@ -4,7 +4,9 @@ class ContactMailer < ApplicationMailer
   def received_email
     @contact = params[:contact]
     @cart = params[:cart]
-    mail(to: 'sales@climgricafrica.com',  subject: "Message from #{params[:contact].first_name}!") do |format|
+    mail(to: @cart.line_items.empty? ? 'sales@climgricafrica.com' : 'franchise@climgricafrica.com',  
+         from: 'no-reply@climgricafrica.com', 
+         subject: "Message From #{params[:contact].first_name.capitalize}!") do |format|
       format.html { render layout: 'received_email' }
       format.text
     end
